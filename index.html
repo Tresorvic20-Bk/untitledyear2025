@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bonne Année 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: bounce 2s infinite;
+        }
+        #voeux {
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+        input, button, textarea {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .fenetre {
+            background-color: #FFC107;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: slide-in 1s ease-out forwards;
+        }
+        .fenetre video {
+            width: 100%;
+            margin-top: 10px;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        @keyframes slide-in {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        footer {
+            background-color: #df0e0e;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            #voeux {
+                width: 90%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+        body::before {
+            content: url('https://example.com/images/sticker.png');
+            display: block;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        .comment-section {
+            margin-top: 20px;
+            padding: 10px;
+            background: #E8EAF6;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .comment-section h2 {
+            margin-top: 0;
+        }
+        .comment-section input, .comment-section textarea {
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .comment-section button {
+            background-color: #FF5252;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .comments {
+            list-style-type: none;
+            padding: 0;
+        }
+        .comments li {
+            background: white;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <p>&trade; 🥳 ce site est la propriéte de Tresorvic tambwe</p><a href="https://www.facebook.com/share/19myaueLA3/?mibextid=LQQJ4d">visitez</a>
+        <h1>Bienvenue en 2025 🎉</h1>
+    </header>
+    <main>
+        <section id="voeux">
+            <h2>Saisissez votre nom et votre photo pour recevoir des voeux personnalisés</h2>
+            <form id="voeux-form">
+                <input type="text" id="nom" placeholder="Votre nom" required>
+                <input type="file" id="photo" accept="image/*" required>
+                <textarea id="voeu" placeholder="Votre voeu" required></textarea>
+                <button type="submit">Soumettre</button>
+            </form>
+            <div id="message"></div>
+            <div id="fenetres">
+                <div class="fenetre">
+                     <p> Je vous souhaite à tous une magnifique année 2025, pleine de bonheur, de santé et de succès ! Que chaque jour soit une nouvelle aventure ! 🎉</p>
+                        <iframe width="300" height="300" src="https://www.youtube.com/embed/6fkWSfWF7ok?list=PLjca9EWGYGRldu_tyFxdssBXIjelyMc_O" title="Bonne Année 2025 🎉 Belle vidéo a offrir pour le nouvel an 2025 🎉 Carte de Vœux 2025 ✨#Vœux2025 ✨4K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+                <div class="fenetre">
+                    <p>bonne année à tous les developpeurs!
+                    que 2025 soit une année de code prore,de
+                    projets reussis et de nouveaux defis passionts!🎉👨‍💻👩‍💻🎉</p>
+                  <iframe width="300" height="300" src="https://www.youtube.com/embed/L1VK9Zzx5Sc" title="IWD - Impact the Future - WTM Kivu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="comment-section">
+            <h2>Laisser un commentaire</h2>
+            <form id="comment-form">
+                <input type="text" id="comment-name" placeholder="Votre nom" required>
+                <textarea id="comment-text" placeholder="Votre commentaire" required></textarea>
+                <button type="submit">Soumettre</button>
+            </form>
+            <ul class="comments" id="comment-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Bonne Année 2025 ! 🎄</p>
+        <button onclick="shareSite()">Partager ce site</button>
+    </footer>
+    <script>
+        document.getElementById('voeux-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nom = document.getElementById('nom').value;
+            const voeu = document.getElementById('voeu').value;
+            const reader = new FileReader();
+            reader.onload = function() {
+                const message = `Bonne Année, ${nom} ! ${voeu} 🎉`;
+                document.getElementById('message').innerHTML = `<p>${message}</p><img src="${reader.result}" alt="Photo de Nouvel An" style="width: 100px;">`;
+            };
+            reader.readAsDataURL(document.getElementById('photo').files[0]);
+        });
+
+        function shareSite() {
+            const url = window.location.href;
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Bonne Année 2025',
+                    text: 'Découvrez ce site pour célébrer la nouvelle année 2025 !',
+                    url: url,
+                })
+                .catch((error) => console.log('Erreur de partage', error));
+            } else {
+                alert(`Copiez ce lien pour partager : ${url}`);
+            }
+        }
+
+        document.getElementById('comment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('comment-name').value;
+            const text = document.getElementById('comment-text').value;
+            const commentList = document.getElementById('comment-list');
+            const newComment = document.createElement('li');
+            newComment.innerHTML = `<strong>${name}:</strong> <p>${text}</p>`;
+            commentList.appendChild(newComment);
+            document.getElementById('comment-form').reset();
+        });
+    </script>
+</body>
+</html>
+```
